@@ -7,7 +7,7 @@ const NavLink = ({href , title}) =>{
 
         className='block sm:text-xl rounded md:p-0'>
             {title}
-       
+        
        </Link>
 
     )
