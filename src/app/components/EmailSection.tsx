@@ -3,7 +3,25 @@ import GithubIcon from '../../../public/github-svgrepo-com.svg'
 import LinkedinIcon from '../../../public/linkedin-color-svgrepo-com.svg'
 import Link from 'next/link';
 import Image from 'next/image';
+
+
+
 const EmailSection = () => {
+
+  const handleSubmit = async (e : React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const form =  e.currentTarget;  
+    const data = {
+      email: (form.email as HTMLInputElement).value,
+      subject: (form.subject as HTMLInputElement).value,
+        message: (form.message as HTMLInputElement).value,
+    
+    }        
+  }
+
+
+
+
   return (
     <section className='grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4'>
       <div>
@@ -35,7 +53,7 @@ const EmailSection = () => {
     id="email"  
     required 
     placeholder='husban786@gmail.com'
-    className='bg-black font-normal border-[2px] border-gray-500 rounded-lg  px-3 py-1 text-blue-400 text-sm placeholder-gray-400'
+    className='bg-black font-normal border-[2px] border-gray-500 rounded-lg  px-3 py-1 text-blue-400 text-sm placeholder-gray-800'
     />
 
     <label htmlFor="text" className='text-white text-xl block font-medium mt-3'>Subject</label>
@@ -45,7 +63,7 @@ const EmailSection = () => {
     id="Subject"  
     required 
     placeholder='Enter your subject'
-    className='bg-black font-normal border-[2px] border-gray-500 rounded-lg px-3 py-1 text-blue-400 text-sm placeholder-gray-400'
+    className='bg-black font-normal border-[2px] border-gray-500 rounded-lg px-3 py-1 text-blue-400 text-sm placeholder-gray-800'
     />
     
     <label htmlFor="text" className='text-white text-xl block font-medium mt-3'>Message</label>
@@ -55,7 +73,7 @@ const EmailSection = () => {
        id="Message"
        placeholder='Enter Your Message'
        required
-       className='bg-black font-normal border-[2px] border-gray-500 rounded-lg text-blue-400 text-sm placeholder-gray-400 px-2 py-1 w-full h-36'
+       className='bg-black font-normal border-[2px] border-gray-500 rounded-lg text-blue-400 text-sm placeholder-gray-800 px-2 py-1 w-full h-36'
         />
 
         <div>
