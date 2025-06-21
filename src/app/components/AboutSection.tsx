@@ -9,7 +9,7 @@ export default function AboutSection() {
     <div className='grid grid-cols-1 md:grid md:grid-cols-2 items-center  py-20 px-5 gap-5'>
     
     <Image 
-      src='/images/About-Image.png'
+      src= "/images/about-image.png"
       className='rounded-lg w-full max-w-[300px] h-auto mx-auto'
       alt='about-image'
       width={400} 
