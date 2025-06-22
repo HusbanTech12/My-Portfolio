@@ -55,14 +55,15 @@ const HeroSection = () => {
     <div className="col-span-5 place-self-center">
       <div className="w-[250px] h-[250px] lg:w-[500px] lg:h-[400px] rounded-full my-5 relative">
         <Image
-          src="/images/hero-image.png"
+          src="/images/about-image.png"
           alt="hero image"
-          className="absolute transform -translate-x-1/2 -translate-  y-1/2 top-1/2 left-1/2 rounded-full object-cover"
+          
+          className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-full object-cover"
           width={300}
           height={300}
         />
       </div>
-    </div>
+    </div>  
   </div>
 </section>
 
