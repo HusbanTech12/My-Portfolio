@@ -59,12 +59,12 @@ export default function ProjectsSection() {
     <>
     <h2 className='text-white text-center text-4xl font-bold mx-auto mb-16 hover:text-emerald-500 cursor-pointer'>My Project</h2>
     <div className='grid md:grid-cols-3 gap-8 md:gap-12'>
-      {ProjectData.map((project)=> 
+      {ProjectData.map((project )=> 
       <ProjectCard 
       key={project.id} 
       title={project.title} 
       description={project.description} 
-      image={project.image}
+      imgUrl={project.image}
       link={project.link}
       />)}
 

@@ -2,13 +2,13 @@ import React from 'react';
 import Link from 'next/link';
 
 interface Card{
-    image : string,
+    imgUrl : string,
     title : string,
     description : string
     link?: string,
     
 }
-const ProjectCard = ({image , title , description , link = '#' }:Card) => {
+const ProjectCard = ({imgUrl , title , description , link = '#' }:Card) => {
   return (
     <>
     <div className='w-[300px]'>
@@ -19,7 +19,7 @@ const ProjectCard = ({image , title , description , link = '#' }:Card) => {
         {/* Image */}
       <div 
       className='w-[300px] h-52 md:h-72 rounded-t-lg relative group '
-      style={{backgroundImage: `url(${image} )` , backgroundSize: "cover" ,backgroundRepeat: 'no-repeat'}}>
+      style={{backgroundImage: `url(${imgUrl} )` , backgroundSize: "cover" ,backgroundRepeat: 'no-repeat'}}>
       </div>
         </Link>  
 
