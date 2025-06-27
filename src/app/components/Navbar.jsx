@@ -3,7 +3,6 @@
 import React , {useState} from 'react';
 import Link from 'next/link';
 import NavLink from './NavLink';
-import Image from 'next/image'
 import { Bars3Icon,XMarkIcon } from '@heroicons/react/24/solid';
 import MenuOverlay from './MenuOverlay'
   const NavLinks = [
@@ -34,14 +33,8 @@ export default function Navbar() {
     <nav className='fixed top-0 left-0 right-0 z-10 bg-black bg-opacity-100'>
         <div className='flex flex-wrap items-center justify-between mx-auto px-3 py-3 '>
             <Link href={'/'} className=' mx-5 text-2xl md:text-5xl text-white font-semibold'>
-            <Image
-             src = "/images/img1.jpg"
-             alt = 'Logo-Image'
-             width = {100}            
-             height = {100}            
             
-            
-            />
+            Husban
             </Link>
 
             <div className='mobile-menu block md:hidden'>
