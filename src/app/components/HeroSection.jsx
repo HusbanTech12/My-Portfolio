@@ -56,7 +56,7 @@ const HeroSection = () => {
       <div className="w-[250px] h-[250px] lg:w-[500px] lg:h-[400px] rounded-full my-5 relative">          
         
         <Image
-          src="/images/about-image.png"
+          src="/images/hero-image.png"
           alt="hero image"
           
           className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-full object-cover"
