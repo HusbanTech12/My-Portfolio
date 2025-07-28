@@ -4,7 +4,7 @@ import Navbar from './components/Navbar'
 import AboutSection from './components/AboutSection'
 import ProjectsSection from './components/ProjectsSection';
 import EmailSection from './components/EmailSection';
-import Footer from './components/Footer';
+// import Footer from './components/Footer';
 import AchievementList from './components/Achievement';
 export default function Home(){
   return(
@@ -16,7 +16,7 @@ export default function Home(){
        <AboutSection />
        <ProjectsSection />
        <EmailSection /> 
-       <Footer/>
+       {/* <Footer/> */}
        </div>
       </main>
   )
