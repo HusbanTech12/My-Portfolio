@@ -56,7 +56,7 @@ const HeroSection = () => {
       <div className="w-[250px] h-[250px] lg:w-[500px] lg:h-[400px] rounded-full my-5 relative">          
         
         <Image
-          src="/images/WhatsApp Image 2025-07-29 at 9.25.58 AM.jpeg"
+          src="/images/Husban.jpeg"
           alt="hero image"
           
           className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-full object-cover"
