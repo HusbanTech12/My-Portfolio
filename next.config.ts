@@ -25,10 +25,10 @@ const nextConfig: NextConfig = {
   },
 
   // Experimental features (for app directory & server components)
-  experimental: {
-    appDir: true,
-    serverActions: true,
-  },
+  // experimental: {
+  //   appDir: true,
+  //   serverActions: true,
+  // },
 
   // Webpack customization (for importing SVGs etc.)
   webpack: (config, { isServer }) => {
